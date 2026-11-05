@@ -58,3 +58,6 @@ Bootstrap подключён локально из папки `vendor/bootstrap/
 5. Открыть `order.html` — проверить форму записи.
 6. Открыть `contacts.html` — проверить контакты и отзывы.
 7. Проверить адаптивность через DevTools (375px, 768px, 1024px, 1440px).
+
+## Ссылка на сайт
+https://godsune.github.io/kr2-bootstrap-shop/index.html
