@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фотостудия «Свет» — Главная</title>
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Фотостудия «Свет»</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active" href="index.html">Главная</a></li>
+                <li class="nav-item"><a class="nav-link" href="catalog.html">Залы и форматы</a></li>
+                <li class="nav-item"><a class="nav-link" href="product.html">Зал «Лофт»</a></li>
+                <li class="nav-item"><a class="nav-link" href="order.html">Запись</a></li>
+                <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<header class="hero-section text-center">
+    <div class="container">
+        <p class="section-title text-warning mb-2">Фотостудия в центре Москвы</p>
+        <h1 class="display-5 fw-bold mb-3">Ваши лучшие кадры начинаются здесь</h1>
+        <p class="lead mb-4 mx-auto" style="max-width: 640px;">
+            Три атмосферных зала, профессиональный свет и команда, которая поможет раскрыться перед камерой.
+        </p>
+        <a class="btn btn-primary btn-lg me-2" href="order.html">Записаться на съёмку</a>
+        <a class="btn btn-outline-light btn-lg" href="catalog.html">Смотреть залы</a>
+    </div>
+</header>
+
+<section class="container my-5 py-4">
+    <div class="text-center mb-5">
+        <p class="section-title">Преимущества</p>
+        <h2 class="section-heading">Почему выбирают «Свет»</h2>
+    </div>
+    <div class="row g-4">
+        <div class="col-12 col-md-4 text-center">
+            <h3 class="h5">Естественный свет</h3>
+            <p class="text-muted">Панорамные окна и мягкий дневной свет в каждом зале.</p>
+        </div>
+        <div class="col-12 col-md-4 text-center">
+            <h3 class="h5">Оборудование</h3>
+            <p class="text-muted">Профессиональные камеры, свет, фоны и реквизит включены.</p>
+        </div>
+        <div class="col-12 col-md-4 text-center">
+            <h3 class="h5">Гибкий график</h3>
+            <p class="text-muted">Работаем с 9:00 до 22:00 без выходных.</p>
+        </div>
+    </div>
+</section>
+
+<section class="container my-5 py-4" id="popular">
+    <div class="d-flex justify-content-between align-items-end mb-4 flex-wrap gap-2">
+        <div>
+            <p class="section-title mb-1">Форматы</p>
+            <h2 class="section-heading mb-0">Популярные съёмки</h2>
+        </div>
+        <a class="btn btn-outline-primary" href="catalog.html">Все форматы</a>
+    </div>
+    <div class="row g-4">
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+                <img src="images/portrait.png" class="card-img-top" alt="Портретная съёмка">
+                <div class="card-body d-flex flex-column">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h3 class="h5 card-title mb-0">Портрет</h3>
+                        <span class="badge bg-success">Хит</span>
+                    </div>
+                    <p class="text-muted">Индивидуальная съёмка в зале с естественным светом.</p>
+                    <p class="fw-bold fs-5 mt-auto mb-2">4 500 ₽ / час</p>
+                    <a class="btn btn-primary" href="product.html">Подробнее</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+                <img src="images/lovestory.png" class="card-img-top" alt="Love Story">
+                <div class="card-body d-flex flex-column">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h3 class="h5 card-title mb-0">Love Story</h3>
+                        <span class="badge bg-warning">Новинка</span>
+                    </div>
+                    <p class="text-muted">Парная съёмка для влюблённых в атмосферном зале.</p>
+                    <p class="fw-bold fs-5 mt-auto mb-2">6 000 ₽ / час</p>
+                    <a class="btn btn-primary" href="product.html">Подробнее</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+                <img src="images/family.jpg" class="card-img-top" alt="Семейная съёмка">
+                <div class="card-body d-flex flex-column">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h3 class="h5 card-title mb-0">Семейная</h3>
+                        <span class="badge bg-danger">Скидка 20%</span>
+                    </div>
+                    <p class="text-muted">Тёплые кадры для всей семьи в просторном зале.</p>
+                    <p class="fw-bold fs-5 mt-auto mb-2">5 200 ₽ / час</p>
+                    <a class="btn btn-primary" href="product.html">Подробнее</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container my-5 py-4">
+    <div class="text-center mb-4">
+        <p class="section-title">Специальные предложения</p>
+        <h2 class="section-heading">Акции студии</h2>
+    </div>
+    <div class="alert alert-info" role="alert">
+        <strong>Промокод «СВЕТ10»</strong> — скидка 10% на первую съёмку в будний день.
+    </div>
+    <div class="row g-4">
+        <div class="col-12 col-md-6">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h3 class="h5">Утро со скидкой</h3>
+                    <p class="text-muted mb-0">Съёмка до 12:00 — скидка 15% на аренду зала.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h3 class="h5">Приведи друга</h3>
+                    <p class="text-muted mb-0">Приведите друга — оба получите скидку 10% на следующую съёмку.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="bg-dark text-white py-5 mt-5">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-12 col-md-4">
+                <h5>Фотостудия «Свет»</h5>
+                <p class="text-white-50 mb-0">Профессиональные съёмки в атмосферных залах.</p>
+            </div>
+            <div class="col-12 col-md-4">
+                <h5>Навигация</h5>
+                <ul class="list-unstyled">
+                    <li><a class="text-white-50 text-decoration-none" href="catalog.html">Залы и форматы</a></li>
+                    <li><a class="text-white-50 text-decoration-none" href="order.html">Запись</a></li>
+                    <li><a class="text-white-50 text-decoration-none" href="contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-4">
+                <h5>Контакты</h5>
+                <p class="text-white-50 mb-0">Москва, ул. Светлая, 10<br>+7 (900) 123-45-67</p>
+            </div>
+        </div>
+        <hr class="border-secondary">
+        <p class="text-center text-white-50 mb-0">© 2026 Фотостудия «Свет». Все права защищены.</p>
+    </div>
+</footer>
+
+<button id="backToTop" title="Наверх">↑</button>
+
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script>
+    const backToTop = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+        backToTop.style.display = window.scrollY > 300 ? 'block' : 'none';
+    });
+    backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+</script>
+</body>
+</html>

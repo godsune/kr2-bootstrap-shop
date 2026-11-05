@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Запись — Фотостудия «Свет»</title>
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Фотостудия «Свет»</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+                <li class="nav-item"><a class="nav-link" href="catalog.html">Залы и форматы</a></li>
+                <li class="nav-item"><a class="nav-link" href="product.html">Зал «Лофт»</a></li>
+                <li class="nav-item"><a class="nav-link active" href="order.html">Запись</a></li>
+                <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<main class="container my-5">
+    <div class="row justify-content-center">
+        <div class="col-12 col-lg-8">
+            <div class="card shadow-sm">
+                <div class="card-header bg-primary text-white">
+                    <h1 class="h4 mb-0">Форма записи</h1>
+                </div>
+                <div class="card-body">
+                    <div class="alert alert-info" role="alert">
+                        Заполните форму. Поля со звёздочкой обязательны.
+                    </div>
+                    <form>
+                        <div class="row g-3">
+                            <div class="col-12 col-md-6">
+                                <label for="order-name" class="form-label">Имя *</label>
+                                <input id="order-name" name="name" type="text" class="form-control" required>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <label for="order-email" class="form-label">E-mail *</label>
+                                <input id="order-email" name="email" type="email" class="form-control" required>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <label for="order-phone" class="form-label">Телефон</label>
+                                <div class="input-group">
+                                    <span class="input-group-text">+7</span>
+                                    <input id="order-phone" name="phone" type="tel" class="form-control" placeholder="900 000-00-00">
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <label for="order-product" class="form-label">Зал</label>
+                                <select id="order-product" name="product" class="form-select">
+                                    <option selected>Выберите зал</option>
+                                    <option value="loft">Зал «Лофт»</option>
+                                    <option value="minimal">Зал «Минимализм»</option>
+                                    <option value="dark">Зал «Тёмный»</option>
+                                    <option value="white">Зал «Белый»</option>
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label for="order-comment" class="form-label">Комментарий</label>
+                                <textarea id="order-comment" name="comment" class="form-control" rows="4"></textarea>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input id="order-agree" class="form-check-input" type="checkbox" required>
+                                    <label class="form-check-label" for="order-agree">Я согласен на обработку данных *</label>
+                                </div>
+                            </div>
+                            <div class="col-12 d-flex gap-2">
+                                <button class="btn btn-primary" type="submit">Отправить заявку</button>
+                                <button class="btn btn-outline-secondary" type="reset">Очистить</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="bg-dark text-white py-4 mt-5">
+    <div class="container text-center">
+        <p class="text-center text-white-50 mb-0">© 2026 Фотостудия «Свет». Все права защищены.</p>
+    </div>
+</footer>
+
+<button id="backToTop" title="Наверх">↑</button>
+
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script>
+    const backToTop = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+        backToTop.style.display = window.scrollY > 300 ? 'block' : 'none';
+    });
+    backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+</script>
+</body>
+</html>
