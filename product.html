@@ -6,12 +6,13 @@
     <title>Зал «Лофт» — Фотостудия «Свет»</title>
     <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
     <div class="container">
-        <a class="navbar-brand" href="index.html">Фотостудия «Свет»</a>
+        <a class="navbar-brand" href="index.html"><i class="bi bi-camera-fill me-2"></i>Фотостудия «Свет»</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -133,9 +134,35 @@
     </section>
 </main>
 
-<footer class="bg-dark text-white py-4 mt-5">
-    <div class="container text-center">
-        <p class="text-center text-white-50 mb-0">© 2026 Фотостудия «Свет». Все права защищены.</p>
+<footer class="bg-dark text-white py-5 mt-5">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-12 col-md-4">
+                <h5>Фотостудия «Свет»</h5>
+                <p class="text-white-50 mb-0">Профессиональные съёмки в атмосферных залах.</p>
+            </div>
+            <div class="col-12 col-md-4">
+                <h5>Навигация</h5>
+                <ul class="list-unstyled">
+                    <li><a class="text-white-50 text-decoration-none" href="catalog.html">Залы и форматы</a></li>
+                    <li><a class="text-white-50 text-decoration-none" href="order.html">Запись</a></li>
+                    <li><a class="text-white-50 text-decoration-none" href="contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-4">
+                <h5>Контакты</h5>
+                <p class="text-white-50 mb-2">
+                    <i class="bi bi-telephone-fill"></i> +7 (900) 123-45-67<br>
+                    <i class="bi bi-envelope-fill"></i> hello@svet-studio.ru
+                </p>
+                <a href="https://t.me/svet_studio" class="text-white text-decoration-none d-block mb-2">
+                    <i class="bi bi-telegram"></i> Telegram
+                </a>
+                <a href="order.html" class="btn btn-primary btn-sm">Забронировать</a>
+            </div>
+        </div>
+        <hr class="border-secondary">
+        <p class="text-center text-white-50 mb-0">© 2026 Фотостудия «Свет». Все права защищены</p>
     </div>
 </footer>
 
